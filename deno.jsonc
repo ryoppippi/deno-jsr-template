@@ -28,5 +28,11 @@
       ".coverage"
     ]
   },
-  "keywords": []
+  "keywords": [],
+  "exclude": [
+    ".vscode",
+    "mod_test.ts",
+    "__snapshots__",
+    ".github"
+  ]
 }
