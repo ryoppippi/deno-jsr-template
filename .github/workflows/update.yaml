@@ -7,6 +7,9 @@ on:
     - cron: "0 9 * * *"
   workflow_dispatch: {}
 
+env:
+  DENO_VERSION: 1.x
+
 jobs:
   update:
     permissions: write-all
@@ -19,7 +22,7 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.x
+          deno-version: ${{ env.DENO_VERSION }}
 
       - name: Update dependencies with molt
         id: run-deno-molt
