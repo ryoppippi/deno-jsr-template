@@ -3,8 +3,8 @@
   "specifiers": {
     "jsr:@cross/runtime@1.0": "1.0.0",
     "jsr:@cross/test@^0.0.14": "0.0.14",
-    "jsr:@std/assert@1": "1.0.2",
-    "jsr:@std/internal@^1.0.1": "1.0.1",
+    "jsr:@std/assert@^1.0.19": "1.0.19",
+    "jsr:@std/internal@^1.0.12": "1.0.13",
     "npm:@types/node@*": "18.16.19",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0"
@@ -19,14 +19,14 @@
         "jsr:@cross/runtime"
       ]
     },
-    "@std/assert@1.0.2": {
-      "integrity": "ccacec332958126deaceb5c63ff8b4eaf9f5ed0eac9feccf124110435e59e49c",
+    "@std/assert@1.0.19": {
+      "integrity": "eaada96ee120cb980bc47e040f82814d786fe8162ecc53c91d8df60b8755991e",
       "dependencies": [
         "jsr:@std/internal"
       ]
     },
-    "@std/internal@1.0.1": {
-      "integrity": "6f8c7544d06a11dd256c8d6ba54b11ed870aac6c5aeafff499892662c57673e6"
+    "@std/internal@1.0.13": {
+      "integrity": "2f9546691d4ac2d32859c82dff284aaeac980ddeca38430d07941e7e288725c0"
     }
   },
   "npm": {
@@ -572,7 +572,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@cross/test@^0.0.14",
-      "jsr:@std/assert@1"
+      "jsr:@std/assert@^1.0.19"
     ]
   }
 }
